@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0000bc;
+}
+
+.wrapper{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-evenly;
+
+}
+
+
+.loader .loading{
+    width: 30px;
+    height: 30px;
+    background: #ffff;
+    border-radius: 50%;
+    margin: 0px 10px;
+    animation: loading 0.7s ease infinite;
+}
+
+.loader .loading.one{
+    animation-delay: 0.2s;
+}
+.loader .loading.two{
+    animation-delay: 0.3s;
+}
+.loader .loading.three{
+    animation-delay: 0.4s;
+}
+
+@keyframes loading{
+
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+
+    50%{
+        width: 20px;
+        height: 20px;
+    }
+}
